@@ -7,6 +7,15 @@
   min-width: 100vw;
 }
 
+@keyframes balance {
+  0% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
 main {
   min-height: 100vh;
   width: 100vw; //eliminando o scroll em lateral
@@ -15,6 +24,7 @@ main {
   align-items: center;
   //justify-content: center;
   flex-direction: column;
+  background-color: $bg-primary;
 
   .header-container {
     display: flex;
@@ -52,14 +62,64 @@ main {
       font-size: 16px;
       font-weight: 500;
     }
+
+  }
+
+  .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-grow: 1; // ocupando todo o espaço restante
+
+    h1 {
+      font-size: 52px;
+      font-weight: 800;;
+    }
+    
+    .bubble {
+      background: hsl(0, 0%, 100%, 0.1);
+      padding: 12px 15px;
+      border-radius: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.fire {
+        right: 20px; //posicionando o emoji para a direita
+        bottom: 30%; //posicionando o emoji para baixo
+        font-size: 24px; //aumentando o tamanho do emoji
+        transform: rotate(-20deg); //rotacionando ele 20 graus para a esquerda
+        width: 50px;
+        height: 50px;
+      }
+      &.rocket {
+        top: 20%;
+        right: 100px;
+        font-size: 42px;
+        width: 90px;
+        height: 90px;
+      }
+      &.target {
+        top: 10%;
+        left: 150px;
+        font-size: 72px;
+        transform: rotate(30deg);
+        animation: balance 800ms alternate 400ms infinite;
+        width: 140px;
+        height: 140px;
+      }
+      &.shop {
+        bottom: 20%;
+        left: 5%;
+        font-size: 36px;
+        transform: rotate(30deg);
+        width: 70px;
+        height: 70px;
+      }
+    }
   }
 }
 
-@keyframes appear {
-  from {
-
-  }
-  to {
-
-  }
-}
+//& = esta propria classe

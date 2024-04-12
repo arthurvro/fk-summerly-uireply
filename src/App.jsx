@@ -17,6 +17,21 @@ function App() {
           Contact us
         </button>
       </header>
+      <div className="content-container">
+        <h1>Lets grow your social presence</h1>
+        <div className="bubble target">
+          🎯
+        </div>
+        <div className="bubble shop">
+          🛍️
+        </div>
+        <div className="bubble rocket">
+          🚀
+        </div>
+        <div className="bubble fire">
+          🔥
+        </div>
+      </div>
     </main>
   )
 }
