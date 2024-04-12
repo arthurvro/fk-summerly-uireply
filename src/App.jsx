@@ -18,7 +18,10 @@ function App() {
         </button>
       </header>
       <div className="content-container">
-        <h1>Lets grow your social presence</h1>
+        <div className="heading-container">
+          <h2>Lets grow your </h2>
+          <h2>social presence</h2>
+        </div>
         <div className="bubble target">
           🎯
         </div>
