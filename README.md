@@ -1,8 +1,8 @@
-# React + Vite
+# SummerlyMedia - Contacts page reply
+Neste repositorio eu reproduzi a pagina de contatos (https://www.summerlymedia.com/contacts) do site da SummerlyMedia.
+O objetivo foi trabalhar com os conceitos de CSS que a página aplica em seus elementos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/arthurvro/fk-summerly-uireply/assets/105928530/5447567c-8915-4d9a-a59c-9b087cbf5c66)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Rodando o projeto
+- npm run dev
